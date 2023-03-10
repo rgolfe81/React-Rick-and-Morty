@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import React, { useState } from "react";
 
 export const RegisterForm = () => {
 
@@ -32,13 +33,13 @@ export const RegisterForm = () => {
       <div className='col-6'>
         <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control type="email" name="email" value={email} onChange={newValue} placeholder="Enter email"/>
         </Form.Group>
       </div>
       <div className='col-6'>
         <Form.Group className="mb-2" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" name="password" value={password} onChange={newValue} placeholder="Password" />
         </Form.Group>
       </div>
     </div>
@@ -46,13 +47,13 @@ export const RegisterForm = () => {
       <div className='col-6'>
         <Form.Group className="mb-2">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="text" placeholder="Name" />
+        <Form.Control type="text" name="name" value={name} onChange={newValue} placeholder="Name" />
         </Form.Group>
       </div>
       <div className='col-6'>
         <Form.Group className="mb-2">
         <Form.Label>Surname</Form.Label>
-        <Form.Control type="text" placeholder="Surname" />
+        <Form.Control type="text" name="surname" value={surname} onChange={newValue} placeholder="Surname" />
         </Form.Group>
       </div>
     </div>
@@ -60,13 +61,13 @@ export const RegisterForm = () => {
       <div className='col-6'>
         <Form.Group className="mb-2">
         <Form.Label>City</Form.Label>
-        <Form.Control type="text" placeholder="City" />
+        <Form.Control type="text" name="city" value={city} onChange={newValue}placeholder="City" />
         </Form.Group>
       </div>
       <div className='col-6'>
         <Form.Group className="mb-2">
         <Form.Label>Phone</Form.Label>
-        <Form.Control type="text" placeholder="Phone" />
+        <Form.Control type="text" name="phone" value={phone} onChange={newValue}placeholder="Phone" />
         </Form.Group>
       </div>
     </div>

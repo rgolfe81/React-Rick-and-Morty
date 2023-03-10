@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 export const Card1 = ({characterProp}) => {
   return (
-    <Card className="d-inline-flex m-1" style={{ width: '15rem' }}>
+    <Card className="d-inline-flex mt-5 m-1" style={{ width: '15rem' }}>
       <Card.Img variant="top" src={characterProp.image} />
       <Card.Body>
         <Card.Title>Id: {characterProp.id}</Card.Title>
