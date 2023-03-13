@@ -4,3 +4,11 @@ body {
 hr {
     color: white;
 }
+.logoHome{
+    height: 80vh;
+}
+.logoDesign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import React, { useState } from 'react';
+import "./addForm.css"
 
 export const AddForm = () => {
 
@@ -17,11 +18,18 @@ export const AddForm = () => {
 
         const {name, value} = target;
         setValor({...valor,[name]:value});
-    }
+    };
+
+    // const handleSummit = (event) => {
+    //     event.preventDefault();
+    //     console.log({id, name})
+    // };
+
+
 
 return (
 <>
-<Form className='container w-25 mt-5 text-light'>
+<Form className='container-fluid addStyle mt-5 text-light'>
     <Form.Group className="mb-3">
         <div className='mx-auto fs-2 mb-4 text-center border rounded'>
             Add Character

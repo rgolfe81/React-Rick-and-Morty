@@ -1,0 +1,9 @@
+.loginStyle{
+    width: 70vw;
+}
+
+@media (min-width: 768px){
+    .loginStyle {
+        width: 40vw;
+    }
+}

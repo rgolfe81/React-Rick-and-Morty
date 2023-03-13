@@ -13,7 +13,7 @@ export const Card1 = ({characterProp}) => {
         <Card.Text>Species: {characterProp.species}</Card.Text>
         <Card.Text>Gender: {characterProp.gender}</Card.Text>
         <div className='text-center'>
-          <Button className="text-center" variant="primary" onClick>Ver más</Button>
+          <Button className="text-center" variant="primary">Ver más</Button>
         </div>
       </Card.Body>
     </Card>

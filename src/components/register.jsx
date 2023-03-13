@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import React, { useState } from "react";
+import "./register.css"
 
 export const RegisterForm = () => {
 
@@ -25,8 +26,8 @@ export const RegisterForm = () => {
 
   return (
     <>
-    <Form className='container w-50 mt-5 text-light'>
-    <div className='mx-auto fs-2 mb-4 text-center border rounded w-50'>
+    <Form className='container-fluid registerStyle mt-5 text-light'>
+    <div className='mx-auto fs-2 mb-4 text-center border rounded'>
       Register Form
     </div>
     <div className='row'>

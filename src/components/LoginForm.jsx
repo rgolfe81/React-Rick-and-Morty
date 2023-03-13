@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import React, { useState } from 'react';
+import "./loginForm.css"
 
 export const LoginForm = () => {
 
@@ -21,7 +22,7 @@ export const LoginForm = () => {
 
   return (
     <>
-    <Form className='container w-25 mt-5 text-light'>
+    <Form className='container-fluid loginStyle mt-5 text-light'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <div className='mx-auto fs-2 mb-4 text-center border rounded'>
           Login Form

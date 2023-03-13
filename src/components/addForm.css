@@ -1,0 +1,9 @@
+.addStyle{
+    width: 70vw;
+}
+
+@media (min-width: 768px){
+    .addStyle {
+        width: 40vw;
+    }
+}
